@@ -1,6 +1,8 @@
 package marrit.marritleenstra_pset3;
 
 
+import java.util.UUID;
+
 /**
  * Created by Marrit on 24-9-2017.
  * Class that holds all the information about a song.
@@ -9,25 +11,21 @@ package marrit.marritleenstra_pset3;
 public class Song {
 
 
-    private String mId;
+    private UUID mId;
     private String mTitle;
     private String mArtist;
     private String mAlbum;
     private String mGenre;
 
 
-    // initiate instance of Class
+    // initiate instance of Class with Id
     public Song() {
-
+        mId = UUID.randomUUID();
     }
 
     // getters and setters for all fields
-    public String getId() {
+    public UUID getId() {
         return mId;
-    }
-
-    public void setId(String id) {
-        mId = id;
     }
 
     public String getTitle() {

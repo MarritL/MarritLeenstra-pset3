@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+
 public class SongList extends AppCompatActivity {
 
     @Override
@@ -20,6 +21,7 @@ public class SongList extends AppCompatActivity {
             fm.beginTransaction()
                     .add(R.id.fragment_container, fragment)
                     .commit();
+
         }
     }
 }
